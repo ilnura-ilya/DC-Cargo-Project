@@ -7,6 +7,7 @@
    background: rgba(68, 109, 14, 0.06);
    margin: 0;
  }
+ /*NavBar Menu*/
  #header{
     background-color: #6CAB52;
     height: 80px;
@@ -60,7 +61,15 @@
    transition: all 0.3s ease-in-out;
    background-color: #FFF;
  }
- 
+ .arrow{
+   position: fixed;
+   right: 30px;
+   top: 90%;
+   z-index: 99;
+}
+
+/*Main Page and Promotion Page*/
+
  #mainPage{
    display: flex;
    margin: 0;
@@ -71,6 +80,7 @@
    min-height: 650px;
    min-width: 100%;
  }
+
  #promotion{
    display: flex;
    margin: 0;
@@ -83,30 +93,11 @@
      min-width: 100%;
  }
 
-/*
- .overlay{
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    height: 90vh;
-   z-index: 0;
-    opacity: 0.8;
- }
-*/
-/*
- .overlayFooter{
-   position: absolute;
-   width: 100%;
-   height: 90vh;
-   background-image: linear-gradient(0deg, rgba(68, 109, 14, 0.68), rgba(68, 109, 14, 0.68));
-   z-index: 0;
-   opacity: 0.8;
- }*/
-
  .container{
    display: flex;
    flex-direction: column;
-   justify-content: center;align-items: center;
+   justify-content: center;
+   align-items: center;
    position: relative;
    z-index: 2;
  }
@@ -145,6 +136,7 @@ transition: background 2s, color 2s;
    color: #fff; 
 }
 
+/*Containers sections style*/
 .aboutUs_container, .serviceContainer,.processContainer, .linksContainer{
    margin: 40px;
    text-align: center;
@@ -154,8 +146,10 @@ transition: background 2s, color 2s;
 
 .processContainer, .contactsContainer{
    background-color: #FFF;
-   margin: 70px;
+   margin: 80px;
       }  
+
+/*About Us*/
 
 .aboutDescription{
    padding: 20px;
@@ -168,15 +162,13 @@ h2{
    margin-bottom: 60px;
    text-align: center;
 }
-.cardcontainer{
-   text-align: center;
-   margin-left: 0;
-}
-
 p{
    margin: 20px;
    font-size: 20px;
 }
+
+/*Services Cards*/
+
 .cardSection{
    display: flex;
    flex-direction: row;
@@ -189,6 +181,7 @@ p{
    border: 1px solid #F9BE50;
    box-shadow: rgba(187, 145, 6, 0.38) 0px 3px 8px;
    width: 350px;
+   margin: 20px;
 }
 .card-text{
    font-family: 'Montserrat', sans-serif;
@@ -199,42 +192,7 @@ p{
    line-height: 50px;
 }
 
-h5{
-   font-family: 'Montserrat', sans-serif;
-   font-size: 28px;
-   font-weight: 600;
-   color: #262626;
-   text-align: center;
-   padding: 10px;
-   padding-top: 15px;
-}
-.serviceText{
-   font-family: 'Montserrat', sans-serif;
-   text-align: center;
-   margin: auto;
-   margin-top: 20px;
-   font-size: 20px;
-   width: 400px;
-   font-weight: 600;
-   color: #262626;
-}
-.textDelivery{
-   padding-top: 40px;
-   text-align: center;
-   margin: 0 40px;
-   }
-
-.deliverySectionText{
-   font-size: 20px;
-   font-family: 'Montserrat', sans-serif;
-   line-height: 42px;
-   }
-
-.mapSection{
-   padding-right: 50px;
-   padding-left: 50px;
-}
-
+/*Delivery Information Container*/
 .localDeliveryService{
    display: flex;
    flex-direction: row;
@@ -243,13 +201,25 @@ h5{
    align-items: center;
    font-family: 'Montserrat', sans-serif;
 }
+.textDelivery{
+   width: 100%;
+   margin: 0;
+}
+.deliverySectionText{
+   font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
+   line-height: 42px;
+   }
+.mapSection{
+   padding-right: 0px;
+   padding-left: 0px;
+}
 .map{
-   width: 600px;
+   width: 550px;
    padding: 40px;
 }
-.terms{
-  padding: 25px;
-}
+
+/*Process of work Container*/
 .processCards{
    margin: 60px;
    display: flex;
@@ -271,12 +241,38 @@ h5{
    width: 65px;
    border-radius: 50px;
 }
+h5{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 28px;
+   font-weight: 600;
+   color: #262626;
+   text-align: center;
+   padding: 10px;
+   padding-top: 15px;
+}
+.terms{
+   padding: 25px;
+ }
+ .serviceText{
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   margin: auto;
+   margin-top: 20px;
+   font-size: 20px;
+   width: 400px;
+   font-weight: 600;
+   color: #262626;
+}
+
+/*Links*/
 
 .linksContainer
 .linksDivContainer{
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    justify-content: space-evenly;
+   align-items: center;
 }
 .linkButton{
    width: 200px;
@@ -286,6 +282,13 @@ h5{
    box-shadow: rgba(187, 145, 6, 0.38) 2px 5px 15px;
    padding: 15px;
 }
+
+/*Contact Us Contaoiner*/
+.input-group-text{
+   background-color: #F9BE50;
+}
+
+/*Footer*/
 .footerContainer{
    background-color: #6CAB52;
    display: flex;
@@ -350,12 +353,8 @@ h6{
 .phoneNumber{
    margin: 10px;
    margin-left: 0;
-   
    font-size: 16px;
    font-family: 'Open Sans', sans-serif;
-}
-.input-group-text{
-   background-color: #F9BE50;
 }
 
 

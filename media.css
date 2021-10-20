@@ -81,6 +81,10 @@ padding-left: 0px;
   width: 250px;
   padding: 0;
 }
+.card{
+  
+   margin: 15px;
+}
 .processCards{
    margin: 20px;
 }
@@ -130,6 +134,17 @@ padding-left: 0px;
 
 
 @media only screen and (max-width: 768px) {
+   h3{
+      width: auto;
+   }
+   .textDelivery{
+      width: 100%;
+      margin: 0;
+   }
+   .localDeliveryService{
+      display: flex;
+      flex-direction: column;
+   }
    .logoImg{
       width: 150px;
       height: 50px;
@@ -172,9 +187,15 @@ padding-left: 0px;
  }
  @media only screen and (max-width: 600px) {
 #header{
-   height: 60px;
+   height: 70px;
+}
+#mainPage, #promotion{
+   height: 90vh;
+   min-height: 450px;
+   min-width: 100%;
 }
 h1{
+   padding-top: 40px;
    font-size: 40px;
 }
 h2{
@@ -183,6 +204,9 @@ h2{
 h3{
    font-size: 26px;
    width: auto;
+}
+.nav-item {
+   margin: 5px 0px;
 }
 .aboutUs_container, .serviceContainer,.processContainer, .linksContainer{
    margin: 20px;
@@ -193,12 +217,12 @@ h3{
       padding: 10px;
       }
     .card{
-       width: 200px;
+       width: 220px;
        margin: 20px;
     }
     .card-text{
-       font-size: 16px;
-       line-height: 35px;
+       font-size: 15px;
+       line-height: 30px;
        margin: 0;
     }
     .textDelivery{
@@ -225,30 +249,308 @@ h3{
       margin: 40px 60px;
    }
    .processCards{
-      margin: 20px;
+      margin: 15px;
    }
-   .card{
-      width: 280px;
-   }
+   
    .card-img{
+      width: 215px;
       height: 320px;
       
    }
    .card-title{
       width: 50px;
-      font-size: 20px;
-      margin: 30px;
+      font-size: 18px;
+      margin: 20px;
+      padding: 12px;
+   }
+
+   .serviceText{
+   font-size: 16px;
+   width: auto;
    }
    .linkButton{
-      width: 130px;
+      width: 110px;
    }
    .linkButton:hover{
-      width: 170px;
-      padding: 20px;
+      width: 130px;
+      padding: 40px;
+   }
+   .lead{
+      font-size: 16px;
    }
    .logoImgFoot{
       width: 200px;
       height: 110px;
     }
-   
+    .button{
+       padding: 12px;
+    }
+    .footerContainer{
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+   .footer-link{
+      font-size: 14px;
+   }
+   .phoneNumber{
+      font-size: 14px;
+   }
+   .mapGoogle{
+      width: 130px;
+      height: 130px;
+   }
+ }
+ @media only screen and (max-width: 500px) {
+   .aboutUs_container, .serviceContainer,.processContainer, .linksContainer{
+      margin: 20px;
+      text-align: center;
+      padding: 20px;
+      padding-bottom: 20px;
+     }
+     .card-text{
+      font-size: 13px;
+      line-height: 20px;
+       }
+   p{
+      font-size: 14px; 
+      margin: 5px;
+   }
+   .deliverySectionText{
+     font-size: 14px;
+     line-height: 25px;
+   }
+   .card{
+     width: 190px;
+   }
+   .card-img{
+     width: 190px;
+     height: 250px;
+   }
+   .processCards{
+     margin: 10px;
+  }
+  .card-title{
+     width: 40px;
+     font-size: 14px;
+     margin: 10px;
+     padding: 10px;
+  }
+ }
+ @media only screen and (max-width: 400px) {
+   #header{
+      height: 60px;
+   }
+   .arrow{
+     right: 10px;
+    }
+   #mainPage #promotion{
+      height: 70vh;
+      min-height: 400px;
+      min-width: 100%;
+   }
+   #promotion{
+      display: none;
+   }
+h1{
+   font-size: 36px;
+   padding-top: 20px;
+   margin-top: 20px;
+}
+h2, h3{
+   font-size: 22px;
+   margin-bottom: 20px;
+}
+.aboutUs_container, .serviceContainer,.processContainer, .linksContainer{
+   margin: 20px;
+   text-align: center;
+   padding: 20px;
+   padding-bottom: 20px;
+  }
+  .aboutDescription{
+   padding: 5px;
+   }
+ .card-text{
+    font-size: 12px;
+    line-height: 20px;
+     }
+ p{
+    font-size: 14px; 
+    margin: 5px;
+ }
+ .deliverySectionText{
+   font-size: 14px;
+   line-height: 25px;
+ }
+ .card{
+   width: 180px;
+ }
+ .card-img{
+   width: 170px;
+   height: 230px;
+ }
+ .processCards{
+   margin: 10px;
+}
+.card-title{
+   width: 45px;
+   font-size: 16px;
+   margin: 15px;
+}
+.contactsContainer{
+   padding: 15px;
+   margin: 5px;
+   margin-bottom: 0;
+   margin-top: 30px;  
+   padding-top: 30px; 
+   background: rgba(68, 109, 14, 0.06);
+}
+.input-group-text{
+   display: none;
+}
+.text-center{
+   margin-bottom: 10px;
+}
+.instaLogo{
+   font-size: 18px;
+}
+.linksFooter{
+   margin: 0;
+   padding: 0;
+}
+.contacts{
+   padding-left: 10px;
+}
+.addressLink{
+   padding-left: 35px;
+   padding-top: 10px;
+}
+.logoImgFoot{
+   bottom: 0;
+ }
+ .hamburger {
+   margin-right: 10px;
+   }
+ }
+ @media only screen and (max-width: 300px) {
+   .nav-item {
+      margin: 0px;
+   }
+   #header{
+      height: 60px;
+   }
+   #mainPage #promotion{
+      height: 50vh;
+      min-height: 350px;
+      min-width: 100%;
+   }
+   h1{
+      font-size: 30px;
+      padding-top: 20px;
+      margin-top: 20px;
+   }
+   h2, h3{
+      font-size: 18px;
+      margin-bottom: 10px;
+   }
+   .button{
+      font-size: 12px;
+   }
+   .aboutUs_container, .serviceContainer,.processContainer, .linksContainer{
+      margin: 10px;
+      text-align: center;
+      padding: 5px;
+      padding-bottom: 20px;
+     }
+   .cardSection{
+      margin-top: 15px;
+   }
+   .card-text{
+      font-size: 10px;
+      line-height: 15px;
+      padding: 0;
+      margin: 0;
+   }
+   .deliverySectionText{
+      font-size: 11px;
+   line-height: 15px;
+   }
+   .map{
+      display: none;
+   }
+   .card{
+      width: 150px;
+   }
+   .card-img{
+      width: 120px;
+      height: 160px;
+    }
+    .card-title{
+      width: 25px;
+      font-size: 11px;
+      margin: 0px;
+      padding: 5px;
+   }
+   .card-text{
+      font-size: 10px;
+   }
+   .serviceText{
+      font-size: 12px;
+   }
+   .linkButton{
+      width: 80px;
+   }
+   .linkButton:hover{
+      width: 100px;
+      padding: 40px;
+   }
+   .lead{
+      font-size: 12px;
+   }
+   form{
+      font-size: 14px;
+   }
+   .input-group{
+      margin-bottom: 0px;
+   }
+   .form-control{
+      font-size: 12px;
+   }
+   .form-floating{
+      margin: 0;
+   }
+   .contactsContainer{
+      padding-top: 15px;
+      padding-bottom: 0px;
+      margin: 5px;
+   }
+   .logoImgFoot{
+      width: 150px;
+      height: 80px;
+    }
+    .footer-link{
+      font-size: 10px;
+   }
+   .phoneNumber{
+      font-size: 10px;
+   }
+   h6{
+      font-size: 10px;
+   }
+   .linksFooter{
+      margin: 0;
+      padding: 0;
+   }
+   .contacts{
+      padding-left: 10px;
+   }
+   .addressLink{
+      padding-left: 35px;
+      padding-top: 10px;
+   }
+   .mapGoogle{
+      display: none;
+   }
+   .footerContainer{
+      margin-top: 0;
+   }
  }
