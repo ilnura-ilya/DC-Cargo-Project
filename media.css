@@ -1,0 +1,254 @@
+@media only screen and (max-width: 1200px){
+  
+  .cardSection{
+     padding: 20px;
+     }
+   .card{
+      width: 300px;
+      margin: 20px;
+   }
+   .card-text{
+      font-size: 16px;
+      line-height: 40px;
+   }
+   .textDelivery{
+      width: 100%;
+   }
+   .mapSection{
+   padding-right: 10px;
+   padding-left: 10px;
+   }
+   .localDeliveryService{
+     margin: 0 10px;
+  }
+  .map{
+     width: 400px;
+  }
+  .card-img{
+     height: 450px;
+     width: 300px;
+  }
+  .card-title{
+     width: 60px;
+  }
+  .contacts{
+     padding-right: 20px;
+
+  }
+  .logoImgFoot{
+   width: 270px;
+    height: 140px;
+    position: relative;
+    left: 0;
+    bottom: 50;
+}
+}
+
+@media only screen and (max-width: 992px){
+
+h1{
+   font-size: 58px;
+   }
+h3{
+   font-size: 32px;
+}
+h2{
+   font-size: 34px;
+}
+.cardSection{
+   padding: 20px;
+   }
+ .card{
+    width: 270px;
+    margin: 20px;
+ }
+ .textDelivery{
+   width: 100%;
+   margin: 0;
+}
+.deliverySectionText{
+   font-size: 16px;
+   line-height: 42px;
+   }
+.mapSection{
+padding-right: 0px;
+padding-left: 0px;
+}
+.localDeliveryService{
+  margin: 0 10px;
+}
+.map{
+  width: 250px;
+  padding: 0;
+}
+.processCards{
+   margin: 20px;
+}
+.card-img{
+   height: 380px;
+   width: 265px;
+}
+.card-title{
+   width: 50px;
+   font-size: 20px;
+   margin: 30px;
+}
+.linkButton{
+   width: 130px;
+}
+.linkButton:hover{
+   width: 170px;
+   padding: 20px;
+}
+.logoImgFoot{
+   width: 200px;
+   height: 110px;
+ }
+}
+
+@media only screen and (max-width: 850px){
+   h1{
+      font-size: 48px;
+   }
+   h2{
+      font-size: 30px;
+   }
+   h3{
+      font-size: 30px;
+   }
+   .addressLink, .linksFooter, .contacts{
+      margin-bottom: 25px;
+   }
+   .linkButton{
+      width: 100px;
+   }
+   .linkButton:hover{
+      width: 110px;
+      padding: 20px;
+   }
+}
+
+
+@media only screen and (max-width: 768px) {
+   .logoImg{
+      width: 150px;
+      height: 50px;
+     }
+   .nav-menu {
+       position: fixed;
+       left: -100%;
+       top: 50px;
+       flex-direction: column;
+       background-color: #6CAB52;
+       width: 100%;
+       transition: 0.3s;
+       z-index: 10;
+     }
+   
+  .nav-menu.active {
+       left: 0;
+   }
+ 
+   .nav-item {
+       margin: 15px 0px;
+   }
+ 
+   .hamburger {
+       display: block;
+       margin-right: 20px;
+       cursor: pointer;
+   }
+   .active .bar:nth-child(2) {
+     opacity: 0;
+ }
+ 
+ .active .bar:nth-child(1) {
+     transform: translateY(8px) rotate(45deg);
+ }
+ 
+ .active .bar:nth-child(3) {
+     transform: translateY(-8px) rotate(-45deg);
+ }
+ }
+ @media only screen and (max-width: 600px) {
+#header{
+   height: 60px;
+}
+h1{
+   font-size: 40px;
+}
+h2{
+   font-size: 26px;
+}
+h3{
+   font-size: 26px;
+   width: auto;
+}
+.aboutUs_container, .serviceContainer,.processContainer, .linksContainer{
+   margin: 20px;
+   text-align: center;
+   padding: 20px;
+    }
+    .cardSection{
+      padding: 10px;
+      }
+    .card{
+       width: 200px;
+       margin: 20px;
+    }
+    .card-text{
+       font-size: 16px;
+       line-height: 35px;
+       margin: 0;
+    }
+    .textDelivery{
+      width: 100%;
+      margin: 0;
+   }
+   .localDeliveryService{
+      display: flex;
+      flex-direction: column;
+   }
+   .deliverySectionText{
+      font-size: 16px;
+      line-height: 35px;
+      }
+   
+   .localDeliveryService{
+     margin: 0 10px;
+   }
+   .map{
+     width: 250px;
+     padding: 0;
+   }
+   .processContainer{
+      margin: 40px 60px;
+   }
+   .processCards{
+      margin: 20px;
+   }
+   .card{
+      width: 280px;
+   }
+   .card-img{
+      height: 320px;
+      
+   }
+   .card-title{
+      width: 50px;
+      font-size: 20px;
+      margin: 30px;
+   }
+   .linkButton{
+      width: 130px;
+   }
+   .linkButton:hover{
+      width: 170px;
+      padding: 20px;
+   }
+   .logoImgFoot{
+      width: 200px;
+      height: 110px;
+    }
+   
+ }
