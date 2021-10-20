@@ -125,6 +125,7 @@ padding-left: 0px;
    }
    .linkButton{
       width: 100px;
+      padding: 20px;
    }
    .linkButton:hover{
       width: 110px;
@@ -174,7 +175,8 @@ padding-left: 0px;
        cursor: pointer;
    }
    .active .bar:nth-child(2) {
-     opacity: 0;
+     
+      opacity: 0;
  }
  
  .active .bar:nth-child(1) {
@@ -342,6 +344,26 @@ h3{
    margin-top: 30px;  
    padding-top: 30px; 
    }
+   .linkButton{
+      width: 100px;
+      padding: 15px;
+   }
+   .linkButton:hover{
+      width: 120px;
+      padding: 30px;
+   }
+   .logoImgFoot{
+      width: 170px;
+      height: 65px;
+      bottom: 0;
+    }
+    .addressLink{
+      padding-left: 10px;
+      padding-top: 10px;
+   }
+   .contacts{
+      margin-right: 20px; 
+   }
  }
  @media only screen and (max-width: 400px) {
    #header{
@@ -426,6 +448,7 @@ h2, h3{
 }
 .contacts{
    padding-left: 10px;
+   margin-right: 0;
 }
 .addressLink{
    padding-left: 35px;
@@ -485,11 +508,11 @@ h2, h3{
       display: none;
    }
    .card{
-      width: 150px;
+      width: 140px;
    }
    .card-img{
-      width: 120px;
-      height: 160px;
+      width: 135px;
+      height: 165px;
     }
     .card-title{
       width: 25px;

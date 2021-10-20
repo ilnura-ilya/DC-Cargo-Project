@@ -13,10 +13,12 @@ function mobileMenu() {
 }
 
 navLink.forEach(n => n.addEventListener("click", closeMenu));
+//hamburger
 
 function closeMenu() {
-    hamburger.classList.remove(".active");
-    navMenu.classList.remove(".active");
+   hamburger.classList.toggle("active");
+    navMenu.classList.remove("active");
+   navBar.classList.remove("active");
 }
 
 //Typing of text
