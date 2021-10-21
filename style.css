@@ -154,9 +154,11 @@
 
 .mainPageNumber{
 color: #262626;
+text-shadow: -1px -1px 1px #F9BE50;
 font-family: 'Montserrat', sans-serif;
 font-weight: 600;
 margin: 10px; 
+font-size: 20px;
 cursor: pointer;
 }
 
@@ -221,14 +223,14 @@ transition: background 2s, color 2s;
       color: #fff; 
    }
 /*Containers sections style*/
-.aboutUs_container, .serviceContainer,.processContainer, .linksContainer{
+.aboutUs_container, .serviceContainer,.processContainer, .deliveryContainer, .linksContainer, .buyContainer{
    margin: 40px;
    text-align: center;
    padding: 40px;
    padding-bottom: 40px;
   }
 
-.processContainer, .contactsContainer{
+  .aboutUs_container, .contactsContainer, .buyContainer{
    background-color: #FFF;
    margin: 80px;
       }  
@@ -237,6 +239,7 @@ transition: background 2s, color 2s;
 
 .aboutDescription{
    padding: 20px;
+   margin-bottom: 20px;
  }
 
 h2{
@@ -245,13 +248,14 @@ h2{
    font-weight: 600;
    margin-bottom: 60px;
    text-align: center;
+   text-shadow: -1px -1px 1px #F9BE50;
 }
 .aboutPar{
    margin: 20px;
    font-size: 20px;
    font-family: 'Montserrat', sans-serif;
    font-style: italic;
-}
+   }
 
 /*Services Cards*/
 
@@ -260,13 +264,12 @@ h2{
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-evenly;
-   margin-top: 30px;
-   padding: 40px;
+   padding: 0px 40px 20px;
 }
 .card{
    border: 1px solid #F9BE50;
    box-shadow: rgba(187, 145, 6, 0.38) 0px 3px 8px;
-   width: 350px;
+   width: 300px;
    margin: 20px;
 }
 .card-text{
@@ -279,6 +282,10 @@ h2{
 }
 
 /*Delivery Information Container*/
+.deliveryContainer{
+   margin-bottom: 0px;
+   padding: 0px;
+}
 .localDeliveryService{
    display: flex;
    flex-direction: row;
@@ -357,8 +364,22 @@ h5{
    font-size: 20px;
    font-weight: 500;
    color: #262626;
+   list-style: circle inside ;
 }
 
+/*Buy Container*/
+.buyPar{
+   margin: 15px 40px;
+   font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
+   font-style: italic;
+   line-height: 42px;
+}
+.buyA{
+   font-family: 'Montserrat', sans-serif;
+   color:rgba(138, 214, 67, 0.9);
+   font-weight: 500;
+}
 
 /*Links*/
 
@@ -391,6 +412,7 @@ h5{
    text-decoration: none;
    color: #262626;
    font-weight: 600;
+   text-shadow: -1px -1px 1px #F9BE50;
 }
 
 /*Footer*/

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;500;600;700;800&family=Noto+Serif+Display&family=PT+Serif&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--Header-->
@@ -36,11 +36,11 @@
                   <a href="#services" class="nav-link">УСЛУГИ</a>
               </li>
               <li class="nav-item">
-               <a href="#services" class="nav-link">ВЫКУП ТОВАРА</a>
+               <a href="#buyInfo" class="nav-link">ВЫКУП ТОВАРА</a>
            </li>
-              <li class="nav-item">
+             <!-- <li class="nav-item">
                   <a href="#links" class="nav-link">ПОЛЕЗНЫЕ ССЫЛКИ</a>
-              </li>
+              </li>-->
               <li class="nav-item">
                <a href="#contacts" class="nav-link">КОНТАКТЫ</a>
            </li>
@@ -85,13 +85,19 @@
       <p class="aboutPar">К каждому клиенту у нас индивидуальный подход!</p>
    </div>
    
-   </div>   
-     <div id="services">
+   </div>  
+   </div> 
+   </section>
+
+
+     <section id="services" class="serviceContainer">
+        <h2>МЫ ПРЕДЛАГАЕМ</h2>
       <div class="cardSection">
+         
          <div class="card cardOne">
             <img src="images/warehouse.jfif" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">У НАС ИМЕЮТСЯ СВОИ СКЛАДЫ В УРУМЧИ И В ИУ, А ТАКЖЕ В БИШКЕКЕ.</p>
+              <p class="card-text">СКЛАДЫ В УРУМЧИ И В ИУ, А ТАКЖЕ В БИШКЕКЕ.</p>
             </div>
          </div>
 
@@ -105,11 +111,12 @@
          <div class="card cardThree">
             <img src="images/calculation.jfif" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">МЫ ПРЕДЛОЖИМ ВАМ САМЫЕ ОПТИМАЛЬНЫЕ ЦЕНЫ.</p>
+              <p class="card-text"> САМЫЕ ОПТИМАЛЬНЫЕ ЦЕНЫ.</p>
             </div>
          </div>
       </div>
 
+      <div class="deliveryContainer">
   <div class="textDelivery">
       <p class="deliverySectionText">Наша компания сотрудничает со множеством предпринимателей из разных городов и стран. Многие из них находятся в регионах. После того, как груз попадает к нам на склад, мы отправляем его дальше в регионы.</p>
             
@@ -123,6 +130,7 @@
            </div>
          </div>
       </div>
+      </section>
    </div>
 </section>
 
@@ -159,24 +167,25 @@
 
       </div>
 
-      <div class="terms">
-         <h4>АВТОДОСТАВКА</h4>
-      <div class="cardcontainer">
-         <p class="serviceText small ">ТОВАРЫ С ШИРОКИМ АССОРТИМЕНТОМ</p>
-         <p class="serviceText small">ОТ 100К</p>
-         <p class="serviceText small">30-40 ДНЕЙ С УРУМЧИ ОТ 3,03$ ЗА КГ</p>
-         <p class="serviceText small"><span>ТАМОЖНЯ ВКЛЮЧЕНА</span></p>
-             </div>
-   </div>
-</section>
+    </section>
 
 <section id="buyInfo">
    <div class="buyContainer">
       <h2>ВЫКУП ТОВАРА</h2>
-      <p>Специалисты нашей компании “DC_CARGO” помогут разобраться с выкупом товаров в Китае. предложим Вам наиболее выгодный и удобный вариант сотрудничества 
-         Предложим Вам услугу по выкупу и доставке товаров из Китая, как напрямую у производителей товаров, так и с интернет-магазинов Китая, таких как: <a href="https://www.1688.com/">1688.com</a> , <a href="https://www.alibaba.com/?src=sem_ggl&from=sem_ggl&cmpgn=9922923052&adgrp=97780320942&fditm=&tgt=aud-806308082096:kwd-14739453&locintrst=&locphyscl=1001960&mtchtyp=e&ntwrk=g&device=c&dvcmdl=&creative=439312801153&plcmnt=&plcmntcat=&p1=&p2=&aceid=&position=&localKeyword=alibaba&gclid=CjwKCAjwn8SLBhAyEiwAHNTJbbO3Pi6o6vWoNVV0uScpItzsemeuO2ymbprzTH8ESsaJOb4UQ9ZmKhoC8MgQAvD_BwE">Alibaba.com</a>, <a href="https://world.taobao.com/">Taobao.com</a>, <a href="https://aliexpress.ru/">Aliexpress.com</a> и других.
+      <p class="buyPar">Специалисты нашей компании “DC_CARGO” помогут разобраться с выкупом товаров в Китае. предложим Вам наиболее выгодный и удобный вариант сотрудничества 
+         Предложим Вам услугу по выкупу и доставке товаров из Китая, как напрямую у производителей товаров, так и с интернет-магазинов Китая, таких как: <a class="buyA"  href="https://www.1688.com/">1688.com</a> , <a class="buyA" href="https://www.alibaba.com/?src=sem_ggl&from=sem_ggl&cmpgn=9922923052&adgrp=97780320942&fditm=&tgt=aud-806308082096:kwd-14739453&locintrst=&locphyscl=1001960&mtchtyp=e&ntwrk=g&device=c&dvcmdl=&creative=439312801153&plcmnt=&plcmntcat=&p1=&p2=&aceid=&position=&localKeyword=alibaba&gclid=CjwKCAjwn8SLBhAyEiwAHNTJbbO3Pi6o6vWoNVV0uScpItzsemeuO2ymbprzTH8ESsaJOb4UQ9ZmKhoC8MgQAvD_BwE">Alibaba.com</a>, <a class="buyA"  href="https://world.taobao.com/">Taobao.com</a>, <a href="https://aliexpress.ru/" class="buyA" >Aliexpress.com</a> и других.
          При крупных заказах стоимость комиссии будет рассматриваться индивидуально.</p>
-
+         <div class="terms">
+            <h4>АВТОДОСТАВКА</h4>
+         <div class="cardcontainer">
+            <ul>
+            <li class="serviceText small ">ТОВАРЫ С ШИРОКИМ АССОРТИМЕНТОМ</li>
+            <li class="serviceText small">ОТ 100К</li>
+            <li class="serviceText small">30-40 ДНЕЙ С УРУМЧИ ОТ 3,03$ ЗА КГ</li>
+            <li class="serviceText small"><span>ТАМОЖНЯ ВКЛЮЧЕНА</span></li>
+         </ul>
+                </div>
+      </div>
    </div>
 </section>
 
@@ -195,7 +204,7 @@
 </section>
 </div>
 
-    <!--Links Page-->
+    <!--Links Page
 <section id="links">
    <div class="linksContainer">
       <h2>САЙТЫ ПОПУЛЯРНЫЕ В 2021 ГОДУ</h2>
@@ -214,14 +223,14 @@
       </div>
    </div>
    </div>
-</section>
+</section>-->
 
 <section id="contacts">
    <div class="contactsContainer">
    <div class="text-center">
       <h2>СВЯЗАТЬСЯ С НАМИ</h2>
       <p class="lead">Возникли вопросы?! Пишите нам на наш <span class="span">email</span> или <span><a href="https://wa.me/996755997999" data-action="share/whatsapp/share" class="span">WhatsApp</a></span></p>
-      <p class="lead">Звоните по номерам:</p>
+      <p class="lead">Или звоните по номерам:</p>
    </div>
    
    <div class="phonesMain">
@@ -302,7 +311,7 @@
          <a href="#services" class="phoneNumber">УСЛУГИ</a>
      </p>
      <p class="footer-item">
-         <a href="#links" class="phoneNumber">ПОЛЕЗНЫЕ ССЫЛКИ</a>
+         <a href="#buyInfo" class="phoneNumber">ВЫКУП ТОВАРА</a>
      </p>
      <p class="footer-item">
       <a href="#contacts" class="phoneNumber">КОНТАКТЫ</a>
