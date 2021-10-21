@@ -284,24 +284,29 @@ h5{
 }
 
 /*Contact Us Contaoiner*/
+.contactsContainer{
+   padding: 40px;
+   font-family: 'Montserrat', sans-serif;
+}
 .input-group-text{
    background-color: #F9BE50;
+}
+.span{
+   text-decoration: none;
+   color: #262626;
+   font-weight: 600;
 }
 
 /*Footer*/
 .footerContainer{
    background-color: #6CAB52;
-   display: flex;
-   flex-direction: row;
-   align-items: flex-start;
-   justify-content: space-around;
-   flex-wrap: wrap;
    padding-top: 40px;
    font-family: 'Montserrat', sans-serif;
+   text-align: center;
 }
 .logoFooter{
-   display: flex;
-   flex-direction: column;
+   margin-left: 20px;
+   
 }
 .logoImgFoot{
     width: 270px;
@@ -309,8 +314,11 @@ h5{
     position: relative;
     bottom: 40px;
    }
-.footer-menu{
-   padding: 0 20px;
+.footer-menu, .contactsFooter, .addressContainer{
+   padding-top: 25px;
+   padding-left: 20px;
+   margin-left: 20px;
+   
 }
 .footer-link{
    text-decoration: none;
@@ -319,42 +327,37 @@ h5{
    font-weight: 600;
    font-size: 16px;
    padding-bottom: 20px;
-   margin-bottom: 50px;
-   
-}
+   }
 .footer-link:hover{
    color: #F9BE50;
  }
  .footer-item{
     list-style: none;
+    margin-top: 0;
+    margin-bottom: 10px;  
  }
-.contactsContainer{
-   padding: 40px;
-   font-family: 'Montserrat', sans-serif;
-}
-.span{
-   text-decoration: none;
-   color: #262626;
-   font-weight: 600;
-}
+
 h6{
    font-family: 'Montserrat', sans-serif;
    font-weight: 600;
 }
+
 .mapGoogle{
    width: 200px;
    height: 200px;
 }
-.phones{
-   margin-left: 0;
-   text-align: left;
-  
-}
+
 .phoneNumber{
    margin: 10px;
    margin-left: 0;
    font-size: 16px;
-   font-family: 'Open Sans', sans-serif;
+   font-weight: 500;
+   font-family: 'Montserrat', sans-serif;
+   text-decoration: none;
+   color: #262626;
+}
+.phoneNumber:hover{
+  color: #F9BE50;
 }
 
 

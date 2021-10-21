@@ -31,10 +31,7 @@
   .card-title{
      width: 60px;
   }
-  .contacts{
-     padding-right: 20px;
-
-  }
+  
   .logoImgFoot{
    width: 270px;
     height: 140px;
@@ -120,9 +117,7 @@ padding-left: 0px;
    h3{
       font-size: 30px;
    }
-   .addressLink, .linksFooter, .contacts{
-      margin-bottom: 25px;
-   }
+   
    .linkButton{
       width: 100px;
       padding: 20px;
@@ -135,6 +130,9 @@ padding-left: 0px;
 
 
 @media only screen and (max-width: 768px) {
+   #header{
+     height: 60px;
+   }
    h3{
       width: auto;
    }
@@ -152,8 +150,8 @@ padding-left: 0px;
      }
    .nav-menu {
        position: fixed;
-       left: -100%;
-       top: 50px;
+      left: -100%;
+       top: -10px;
        flex-direction: column;
        background-color: #6CAB52;
        width: 100%;
@@ -166,13 +164,17 @@ padding-left: 0px;
    }
  
    .nav-item {
-       margin: 15px 0px;
+       margin: 0px 0px;
    }
  
    .hamburger {
+      position: fixed;
        display: block;
+       right: 10px;
+       top: 10px;
        margin-right: 20px;
        cursor: pointer;
+       z-index: 100;
    }
    .active .bar:nth-child(2) {
      
@@ -287,10 +289,7 @@ h3{
     .button{
        padding: 12px;
     }
-    .footerContainer{
-      align-items: flex-start;
-      justify-content: space-around;
-    }
+   
    .footer-link{
       font-size: 14px;
    }
@@ -357,13 +356,7 @@ h3{
       height: 65px;
       bottom: 0;
     }
-    .addressLink{
-      padding-left: 10px;
-      padding-top: 10px;
-   }
-   .contacts{
-      margin-right: 20px; 
-   }
+  
  }
  @media only screen and (max-width: 400px) {
    #header{
@@ -439,21 +432,7 @@ h2, h3{
 .text-center{
    margin-bottom: 10px;
 }
-.instaLogo{
-   font-size: 18px;
-}
-.linksFooter{
-   margin: 0;
-   padding: 0;
-}
-.contacts{
-   padding-left: 10px;
-   margin-right: 0;
-}
-.addressLink{
-   padding-left: 35px;
-   padding-top: 10px;
-}
+
 .logoImgFoot{
    bottom: 0;
  }
@@ -566,17 +545,7 @@ h2, h3{
    h6{
       font-size: 10px;
    }
-   .linksFooter{
-      margin: 0;
-      padding: 0;
-   }
-   .contacts{
-      padding-left: 10px;
-   }
-   .addressLink{
-      padding-left: 35px;
-      padding-top: 10px;
-   }
+  
    .mapGoogle{
       display: none;
    }
