@@ -64,13 +64,13 @@
  .arrow{
    position: fixed;
    right: 30px;
-   top: 95%;
+   top: 92%;
    z-index: 99;
 }
 .whatsapp{
    position: fixed;
    right: 18px;
-   top: 85%;
+   top: 82%;
    z-index: 99;
    color: red;
    cursor: pointer;
@@ -384,9 +384,7 @@ h5{
    padding-bottom: 50px;
    margin: 0;
 }
-.logoFooter{
 
-}
 .logoImgFoot{
     width: 270px;
     height: 140px;
