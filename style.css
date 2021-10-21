@@ -3,8 +3,11 @@
    padding: 0;
    margin: 0
  }
+
+
  body{
    background: rgba(68, 109, 14, 0.06);
+   font-family: 'Montserrat', sans-serif;
    margin: 0;
  }
  /*NavBar Menu*/
@@ -70,18 +73,23 @@
 .whatsapp{
    position: fixed;
    right: 18px;
-   top: 82%;
+   top: 87%;
    z-index: 99;
    color: red;
    cursor: pointer;
-   border-radius: 60%;
-   padding: 10px 12px;
+   border-radius: 50%;
+   padding: 5px 12px 12px 12px;
 	box-shadow: 0 0 0 rgba(86, 175, 34, 0.4);
 	animation: pulse 2s infinite;
 }
+.whatsappLogo{
+   width: 40px;
+   height: 40px;
+}
+/*
 .whatsapp:hover {
 	animation: none;
-}
+}*/
 
 @-webkit-keyframes pulse {
 	0% {
@@ -147,7 +155,9 @@
 .mainPageNumber{
 color: #262626;
 font-family: 'Montserrat', sans-serif;
+font-weight: 600;
 margin: 10px; 
+cursor: pointer;
 }
 
  .container{
@@ -178,8 +188,8 @@ h3{
 }
 
 .buttonWA{
-   position: absolute;
-   top: 450px;
+position: absolute;
+top: 450px;
 margin-top: 50px;
 text-decoration: none;
 background-color: #F9BE50;
@@ -236,9 +246,11 @@ h2{
    margin-bottom: 60px;
    text-align: center;
 }
-p{
+.aboutPar{
    margin: 20px;
    font-size: 20px;
+   font-family: 'Montserrat', sans-serif;
+   font-style: italic;
 }
 
 /*Services Cards*/
@@ -248,8 +260,8 @@ p{
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-evenly;
-   margin-top: 50px;
-   padding: 50px;
+   margin-top: 30px;
+   padding: 40px;
 }
 .card{
    border: 1px solid #F9BE50;
@@ -282,6 +294,7 @@ p{
 .deliverySectionText{
    font-size: 20px;
    font-family: 'Montserrat', sans-serif;
+   font-style: italic;
    line-height: 42px;
    }
 .mapSection{
@@ -327,16 +340,25 @@ h5{
 .terms{
    padding: 25px;
  }
+ h4{
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   font-size: 26px;
+   font-weight: 600;
+   margin: 10px;
+   margin-bottom: 15px;
+   
+ }
  .serviceText{
    font-family: 'Montserrat', sans-serif;
    text-align: center;
    margin: auto;
    margin-top: 20px;
    font-size: 20px;
-   width: 400px;
-   font-weight: 600;
+   font-weight: 500;
    color: #262626;
 }
+
 
 /*Links*/
 
@@ -420,8 +442,7 @@ a{
 h6{
    font-family: 'Montserrat', sans-serif;
    font-weight: 600;
-   width: 100px ;
-   margin: auto;
+   margin-bottom: 10px;
 }
 
 .mapGoogle{

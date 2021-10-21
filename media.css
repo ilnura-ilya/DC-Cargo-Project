@@ -363,7 +363,10 @@ h3{
       height: 60px;
    }
    .arrow{
-     right: 10px;
+     right: 14px;
+    }
+    .whatsapp{
+       right: 2px;
     }
    #mainPage #promotion{
       height: 70vh;
