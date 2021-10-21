@@ -64,9 +64,52 @@
  .arrow{
    position: fixed;
    right: 30px;
-   top: 90%;
+   top: 95%;
    z-index: 99;
 }
+.whatsapp{
+   position: fixed;
+   right: 18px;
+   top: 85%;
+   z-index: 99;
+   color: red;
+   cursor: pointer;
+   border-radius: 60%;
+   padding: 10px 12px;
+	box-shadow: 0 0 0 rgba(86, 175, 34, 0.4);
+	animation: pulse 2s infinite;
+}
+.whatsapp:hover {
+	animation: none;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(114, 228, 21, 0.4);
+	}
+	70% {
+		-webkit-box-shadow: 0 0 0 10px rgba(112, 218, 50, 0);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(141, 231, 23, 0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		-moz-box-shadow: 0 0 0 0 rgba(121, 218, 32, 0.4);
+		box-shadow: 0 0 0 0 rgba(120, 212, 34, 0.4);
+	}
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(135, 190, 32, 0);
+		box-shadow: 0 0 0 10px rgba(116, 204, 44, 0);
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(148, 204, 44, 0);
+		box-shadow: 0 0 0 0 rgba(135, 204, 44, 0);
+	}
+}
+	
 
 /*Main Page and Promotion Page*/
 
@@ -92,6 +135,20 @@
      min-height: 650px;
      min-width: 100%;
  }
+
+ 
+.phonesMain{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.mainPageNumber{
+color: #262626;
+font-family: 'Montserrat', sans-serif;
+margin: 10px; 
+}
 
  .container{
    display: flex;
@@ -120,7 +177,9 @@ h3{
    text-align: center;
 }
 
-.button{
+.buttonWA{
+   position: absolute;
+   top: 450px;
 margin-top: 50px;
 text-decoration: none;
 background-color: #F9BE50;
@@ -131,11 +190,26 @@ padding: 20px;
 border-radius: 30px;
 transition: background 2s, color 2s;
 }
-.button:hover{
+.buttonWA:hover{
    background-color: #6CAB52;
    color: #fff; 
 }
 
+.button{
+   margin-top: 50px;
+   text-decoration: none;
+   background-color: #F9BE50;
+   color: #fff;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+   padding: 20px;
+   border-radius: 30px;
+   transition: background 2s, color 2s;
+   }
+   .button:hover{
+      background-color: #6CAB52;
+      color: #fff; 
+   }
 /*Containers sections style*/
 .aboutUs_container, .serviceContainer,.processContainer, .linksContainer{
    margin: 40px;
@@ -298,15 +372,20 @@ h5{
 }
 
 /*Footer*/
+.container-fluid{
+   margin: 0;
+}
 .footerContainer{
    background-color: #6CAB52;
    padding-top: 40px;
    font-family: 'Montserrat', sans-serif;
    text-align: center;
+   margin-bottom: 0;
+   padding-bottom: 50px;
+   margin: 0;
 }
 .logoFooter{
-   margin-left: 20px;
-   
+
 }
 .logoImgFoot{
     width: 270px;
@@ -315,11 +394,11 @@ h5{
     bottom: 40px;
    }
 .footer-menu, .contactsFooter, .addressContainer{
-   padding-top: 25px;
-   padding-left: 20px;
-   margin-left: 20px;
+  padding-top: 25px;
+   padding-left: 0px;
    
-}
+   margin: 0;
+  }
 .footer-link{
    text-decoration: none;
    color: #262626;
@@ -334,19 +413,27 @@ h5{
  .footer-item{
     list-style: none;
     margin-top: 0;
-    margin-bottom: 10px;  
+    margin-bottom: 5px; 
+    
  }
-
+a{
+   text-decoration: none;
+}
 h6{
    font-family: 'Montserrat', sans-serif;
    font-weight: 600;
+   width: 100px ;
+   margin: auto;
 }
 
 .mapGoogle{
    width: 200px;
    height: 200px;
 }
-
+.instaLogo{
+   padding: 10px;
+   padding-left: 0;
+}
 .phoneNumber{
    margin: 10px;
    margin-left: 0;
@@ -355,6 +442,8 @@ h6{
    font-family: 'Montserrat', sans-serif;
    text-decoration: none;
    color: #262626;
+  /* width: auto;*/
+   
 }
 .phoneNumber:hover{
   color: #F9BE50;
